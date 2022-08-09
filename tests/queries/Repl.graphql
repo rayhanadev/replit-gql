@@ -1,0 +1,7 @@
+query ReplId($id: String!) {
+	repl(id: $id) {
+    ...on Repl {
+      slug
+    }
+  }
+}
