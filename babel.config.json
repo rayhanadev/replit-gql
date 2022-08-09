@@ -1,7 +1,10 @@
 {
 	"env": {
 		"test": {
-			"plugins": ["@babel/plugin-transform-modules-commonjs", "import-graphql"],
+			"plugins": [
+				"@babel/plugin-transform-modules-commonjs",
+				"import-graphql"
+			],
 			"presets": [
 				["@babel/preset-env", { "targets": { "node": "current" } }]
 			]

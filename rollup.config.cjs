@@ -37,7 +37,11 @@ module.exports = [
 				 to minify the final bundle: */
 			// terser(),
 		],
-		external: [...builtinModules, ...Object.keys(dependencies), '@apollo/client/core'],
+		external: [
+			...builtinModules,
+			...Object.keys(dependencies),
+			'@apollo/client/core',
+		],
 	},
 	{
 		input: 'dist/dts/index.d.ts',
