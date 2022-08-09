@@ -1,6 +1,6 @@
 {
 	"name": "@rayhanadev/replit-gql",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Reusable function to query Replit's GraphQL API.",
 	"sideEffects": true,
 	"type": "module",
