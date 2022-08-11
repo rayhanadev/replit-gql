@@ -39,8 +39,7 @@ module.exports = [
 		],
 		external: [
 			...builtinModules,
-			...Object.keys(dependencies),
-			'@apollo/client/core',
+			...Object.keys(dependencies)
 		],
 	},
 	{

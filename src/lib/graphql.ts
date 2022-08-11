@@ -2,7 +2,7 @@ import fetch from '@replit/node-fetch';
 import { ApolloClient, HttpLink, InMemoryCache } from '@apollo/client/core';
 
 import type { RequestInfo, RequestInit } from '@replit/node-fetch';
-import type { NormalizedCacheObject } from '@apollo/client';
+import type { NormalizedCacheObject } from '@apollo/client/core';
 
 export type TGraphQLClient = ApolloClient<NormalizedCacheObject>;
 export type TGraphQL = (token: string) => TGraphQLClient;
