@@ -5,7 +5,7 @@ import type { RequestInfo, RequestInit } from '@replit/node-fetch';
 import type { NormalizedCacheObject } from '@apollo/client';
 
 export type TGraphQLClient = ApolloClient<NormalizedCacheObject>;
-export type GraphQL = (token: string) => TGraphQLClient;
+export type TGraphQL = (token: string) => TGraphQLClient;
 
 export const GraphQL = (token: string): TGraphQLClient => {
 	const customFetch = (uri: RequestInfo, options: RequestInit) => {
