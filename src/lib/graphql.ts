@@ -4,7 +4,10 @@ import { ApolloClient, HttpLink, InMemoryCache } from '@apollo/client/core';
 import type { RequestInfo, RequestInit } from '@replit/node-fetch';
 import type { NormalizedCacheObject } from '@apollo/client';
 
-export const GraphQL = (token: string): ApolloClient<NormalizedCacheObject> => {
+export type TGraphQLClient = ApolloClient<NormalizedCacheObject>;
+export type GraphQL = (token: string) => TGraphQLClient;
+
+export const GraphQL = (token: string): TGraphQLClient => {
 	const customFetch = (uri: RequestInfo, options: RequestInit) => {
 		options.headers = {
 			...options.headers,
