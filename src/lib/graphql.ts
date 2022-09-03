@@ -29,7 +29,9 @@ export const GraphQL = (token: string): TGraphQLClient => {
 
 	const client = new ApolloClient({
 		link,
-		cache: new InMemoryCache(),
+		cache: new InMemoryCache({
+			resultCaching: false
+		}),
 		name: '@rayhanadev/replit-gql',
 		version: '1.0.0',
 		queryDeduplication: false,
